@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Fat Spirit Upcoming Shows</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/images/fav.png">
+
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+  <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Upcoming Shows! -->
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <!-- Current Employees-->
+        <div class="card card-primary text-center">
+          <div class="card-heading">
+            <h3 class="card-title">
+              <strong>Upcoming Show List</strong>
+            </h3>
+          </div>
+          <div class="card-body">
+            <table class="table table-hover" id='employee-table'>
+              <thead>
+                <tr>
+                  <th>Venue</th>
+                  <th>Day of Week</th>
+                  <th>Show Date</th>
+                  <th>Days Until Show</th>
+                  <th>Load-In Time</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Add Show  -->
+
+      <div class="row">
+
+        <div class="col-lg-12">
+          <br>
+          <div class="card card-primary text-center">
+            <div class="card-heading">
+              <h3 class="card-title">
+                <strong>Add a Show</strong>
+              </h3>
+            </div>
+            <div class="card-body">
+
+              <!-- Entry Form -->
+              <form>
+                <div class="form-group row">
+                  <label for="venue-input">Venue Name</label>
+                  <input class="form-control" id="venue-input" type="text">
+                </div>
+                <!-- <div class="form-group row">
+              <label for="role-input">Day of Week</label>
+              <input class="form-control" id="role-input" type="text">
+            </div> -->
+                <div class="form-group row">
+                  <label for="showDate-input">Show Date (MM/DD/YY - ex: 01/01/18)</label>
+                  <input class="form-control" id="showDate-input" type="text">
+                </div>
+                <div class="form-group row">
+                  <label for="load-input">Load-In Time (24:00)</label>
+                  <input class="form-control" id="load-input" type="text">
+                </div>
+                <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    
+
+  
+  </div>
+  </div>
+</div>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>
