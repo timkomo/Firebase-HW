@@ -26,3 +26,6 @@ body {
 
 }
 
+@-ms-viewport{
+    width: device-width;
+  }
