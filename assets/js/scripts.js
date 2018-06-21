@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+  var money = new Audio("./assets/audio/money.mp3")
+  
+    $("#pwd").keyup(function() {
+        if ($('#pwd').val() == "aceofcups"){
+            $("#passwordDiv").hide(1000);
+            $('#addShowDiv').show();
+            money.play();
+            $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+
+
+        }
+     
+      })
+
+  
 
     // Initialize Firebase
     var config = {
